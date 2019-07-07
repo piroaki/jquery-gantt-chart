@@ -97,19 +97,19 @@ function dateToRelative(localTime){
 
 //override date format i18n
 
-Date.monthNames = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+Date.monthNames = ["1月","2月","3月","4月","5月","6月","7月","8月","9月","10月","11月","12月"];
 // Month abbreviations. Change this for local month names
-Date.monthAbbreviations = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+Date.monthAbbreviations =  ["1月","2月","3月","4月","5月","6月","7月","8月","9月","10月","11月","12月"];
 // Full day names. Change this for local month names
-Date.dayNames =["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+Date.dayNames =["日曜","月曜","火曜","水曜","木曜","金曜","土曜"];
 // Day abbreviations. Change this for local month names
-Date.dayAbbreviations = ["Sun","Mon","Tue","Wed","Thu","Fri","Sat"];
+Date.dayAbbreviations = ["日","月","火","水","木","金","土"];
 // Used for parsing ambiguous dates like 1/2/2000 - default to preferring 'American' format meaning Jan 2.
 // Set to false to prefer 'European' format meaning Feb 1
 Date.preferAmericanFormat = false;
 
 Date.firstDayOfWeek =0;
-Date.defaultFormat = "M/d/yyyy";
+Date.defaultFormat = "yyyy/MM/dd";
 Date.masks = {
   fullDate:       "EEEE, MMMM d, yyyy",
   shortTime:      "h:mm a"
